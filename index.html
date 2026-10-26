@@ -111,25 +111,27 @@
 
         <!-- Dynamic Title & Subtitle -->
         <h1 id="question-title" class="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-2 leading-tight">
-            Hayatımın Anlamı Olur Musun? 💕
+            Kalbimde Özel Bir Yerin Olur Mu? 💕
         </h1>
         <p id="question-subtitle" class="text-gray-600 text-sm sm:text-base font-medium mb-6">
-            Seninle her günüm bir masal gibi olsun istiyorum... ✨
+            Seninle güzel anılar biriktirmek ve bu hikâyeye birlikte başlamak istiyorum. ✨
         </p>
 
         <!-- Dynamic Action Buttons -->
-        <div id="button-group" class="relative flex flex-row items-center justify-center gap-4 min-h-[60px] w-full">
-            <button id="btn-evet" onclick="handleEvetClick()" class="btn-evet text-white font-bold py-3 px-8 rounded-full text-lg cursor-pointer transform">
-                Evet! 🥰
-            </button>
-            
-            <button id="btn-hayir" onclick="handleHayirClick()" class="btn-hayir font-semibold py-3 px-6 rounded-full text-sm cursor-pointer whitespace-nowrap">
-                Hayır 🥺
-            </button>
+        <div id="button-group" class="relative flex flex-col items-center justify-center gap-4 min-h-[60px] w-full">
+            <div id="primary-buttons" class="flex flex-row items-center justify-center gap-4 w-full">
+                <button id="btn-evet" onclick="handleEvetClick()" class="btn-evet text-white font-bold py-3 px-8 rounded-full text-lg cursor-pointer transform">
+                    Evet! 🥰
+                </button>
+                
+                <button id="btn-hayir" onclick="handleHayirClick()" class="btn-hayir font-semibold py-3 px-6 rounded-full text-sm cursor-pointer whitespace-nowrap">
+                    Hayır 🥺
+                </button>
+            </div>
         </div>
 
         <!-- Isim Input Alani -->
-        <div id="names-input-container" class="mt-4 pt-3 border-t border-pink-200/60 flex items-center justify-center gap-2 text-xs text-gray-500">
+        <div id="names-input-container" class="mt-4 pt-3 border-t border-pink-200/60 flex items-center justify-center gap-2 text-xs text-gray-500" style="display:none;">
             <input type="text" id="partner-name" placeholder="Senin Adın" value="Ali" class="w-24 px-2 py-1 rounded-lg border border-pink-200 text-center focus:outline-none focus:border-pink-500 bg-white/70">
             <i class="fa-solid fa-heart text-pink-400"></i>
             <input type="text" id="my-name" placeholder="O'nun Adı" value="Melike" class="w-24 px-2 py-1 rounded-lg border border-pink-200 text-center focus:outline-none focus:border-pink-500 bg-white/70">
@@ -176,35 +178,35 @@
                 gifUrl: "https://tenor.com/view/tkthao219-peach-goma-gif-22211728",
                 gifText: "Tkthao219 Peach Sticker",
                 title: "Benimle Sevgili Olur Musun? 💕",
-                subtitle: "Seninle geçirdiğim her an dünyanın en güzel hediyesi... 🥰"
+                subtitle: "Sana karşı hislerim var; eğer sen de istersen bu güzel hikâyeyi birlikte yaşayalım. 🥰"
             },
             {
                 postId: "6047235095567172039",
                 gifUrl: "https://tenor.com/view/cat-cute-sweet-gif-6047235095567172039",
                 gifText: "Cat Cute Sticker",
-                title: "Beni Sevmiyor Musun? 🥺",
-                subtitle: "İçimden bir ses kalbinin 'Evet' dediğini söylüyor ama..."
+                title: "Biraz Düşünmek İster Misin? 🥺",
+                subtitle: "Ne hissediyorsan açıkça söyleyebilirsin; cevabına saygı duyacağım. 💗"
             },
             {
                 postId: "15349606683866164500",
                 gifUrl: "https://tenor.com/view/peach-goma-gif-15349606683866164500",
                 gifText: "Peach Goma Sticker",
-                title: "Kalbin Hiç mi Sızlamadı? 💔",
-                subtitle: "Bak üzüntüden minik bir kediye dönüştüm..."
+                title: "Belki Kalplerimiz Aynı Şeyi Hissediyordur? 💌",
+                subtitle: "Sadece içimden geçenleri seninle paylaşmak istedim. 🌷"
             },
             {
                 postId: "11475182493579292359",
                 gifUrl: "https://tenor.com/view/peach-and-goma-mochi-cat-mitao-cat-angry-stomp-gif-11475182493579292359",
                 gifText: "Peach And Goma Mochi Cat GIF",
-                title: "Bence Bir Daha Düşün! 😤",
-                subtitle: "Vazgeçmeye hiç niyetim yok haberin olsun!"
+                title: "İstersen Bir Kez Daha Düşünebilirsin 🌸",
+                subtitle: "Acele etmen gerekmiyor; önemli olan senin ne hissettiğin. 🤍"
             },
             {
                 postId: "6615263922768746658",
                 gifUrl: "https://tenor.com/view/peach-goma-peach-and-goma-goma-and-peach-peach-and-goma-gif-gif-6615263922768746658",
                 gifText: "Peach Goma GIF",
-                title: "Son Kararın Olmadığını Biliyorum! 😉",
-                subtitle: "Artık 'Hayır' butonuna basmak o kadar kolay olmayacak!"
+                title: "Kararın Ne Olursa Olsun, Dürüstlüğün Benim İçin Değerli 💖",
+                subtitle: "İçinden gelen cevabı seç; seni dinlemeye hazırım. ✨"
             }
         ];
 
@@ -213,8 +215,8 @@
             postId: "14504502512540993086",
             gifUrl: "https://tenor.com/view/peach-goma-gif-14504502512540993086",
             gifText: "Peach Goma Sticker",
-            title: "EVET DEDİN! 🎉💖",
-            subtitle: "Beni dünyanın en mutlu insanı yaptın! Seni Çok Seviyorum! 👩‍❤️‍👨✨"
+            title: "BU GÜZEL BAŞLANGICA EVET DEDİN! 🎉💖",
+            subtitle: "Bana bu şansı verdiğin için çok mutluyum. Güzel anılarımız olsun! 👩‍❤️‍👨✨"
         };
 
         let currentStepIndex = 0;
@@ -233,14 +235,16 @@
         const btnEvet = document.getElementById('btn-evet');
         const btnHayir = document.getElementById('btn-hayir');
         const dotsContainer = document.getElementById('step-dots');
+        const buttonGroup = document.getElementById('button-group');
 
         // INITIALIZATION
         window.addEventListener('load', () => {
             renderStep(currentStepIndex);
             createFloatingHearts();
             logAction("Ziyaretçi teklif sayfasını açtı.");
-            sendTelegramNotification("🔔 *BİLDİRİM:* Ziyaretçi teklif sayfanızı açtı ve incelemeye başladı!");
+            sendTelegramNotification("🔔 Ziyaretçi sevgililik teklifi sayfasını açtı.");
 
+            // Keyboard shortcut listener for hidden Admin Panel (Shift + L)
             document.addEventListener('keydown', (e) => {
                 if (e.shiftKey && (e.key === 'L' || e.key === 'l')) {
                     toggleAdminPanel();
@@ -298,9 +302,7 @@
         function handleHayirClick() {
             hayirClicksCount++;
             
-            const pName = document.getElementById('partner-name').value.trim() || "Kullanıcı";
-            
-            const msg = `⚠️ *HAYIR TIKLANDI!* \n👤 *İsim:* ${pName}\n📍 *Aşama:* ${currentStepIndex + 1}. Adım\n🔢 *Toplam Hayır Tıklaması:* ${hayirClicksCount}`;
+            const msg = `⚠️ HAYIR seçildi.\n📍 Aşama: ${currentStepIndex + 1}. adım\n🔢 Hayır tıklaması: ${hayirClicksCount}`;
             logAction(`Ziyaretçi ${currentStepIndex + 1}. aşamada "HAYIR" butonuna bastı. (Toplam Hayır: ${hayirClicksCount})`);
             sendTelegramNotification(msg);
 
@@ -311,72 +313,56 @@
                 currentStepIndex++;
                 renderStep(currentStepIndex);
             } else {
-                moveHayirButtonRandomly();
-            }
-
-            if (currentStepIndex === steps.length - 1) {
-                enableEvasiveHayir();
+                showKapatildiState();
             }
         }
 
-        // EVASIVE BUTTON MECHANISM
-        function enableEvasiveHayir() {
-            btnHayir.style.position = "absolute";
+        // KAPATILDI EKRANI VE YENİDEN DÜŞÜNDÜM BUTONU
+        function showKapatildiState() {
+            titleEl.textContent = "Cevabın İçin Teşekkür Ederim 🤍";
+            subtitleEl.textContent = "Kararına saygı duyuyorum. Dürüstçe cevap verdiğin için teşekkür ederim.";
             
-            btnHayir.onmouseenter = moveHayirButtonRandomly;
-            btnHayir.ontouchstart = (e) => {
-                e.preventDefault();
-                moveHayirButtonRandomly();
-                logAction(`Ziyaretçi mobil cihazda kaçan "HAYIR" butonuna dokunmaya çalıştı.`);
-            };
+            buttonGroup.innerHTML = `
+                <div class="flex flex-col items-center gap-3 w-full">
+                    <button disabled class="btn-hayir font-semibold py-3 px-6 rounded-full text-sm opacity-60 cursor-not-allowed w-full max-w-xs">
+                        Kapatıldı 🤍
+                    </button>
+                    <button onclick="handleYenidenDundundum()" class="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold py-2.5 px-6 rounded-full text-sm shadow-md transition transform hover:scale-105 cursor-pointer">
+                        ✨ Yeniden Düşündüm...
+                    </button>
+                </div>
+            `;
+            dotsContainer.style.display = 'none';
         }
 
-        function moveHayirButtonRandomly() {
-            const card = document.getElementById('main-card');
-            const cardRect = card.getBoundingClientRect();
-            const evetRect = btnEvet.getBoundingClientRect();
+        // YENİDEN DÜŞÜNDÜM BUTONUNA BASILDIGINDA SORGULAMA EKRANI
+        function handleYenidenDundundum() {
+            logAction("Ziyaretçi 'Yeniden Düşündüm' butonuna bastı.");
+            sendTelegramNotification("🔄 Ziyaretçi 'Yeniden Düşündüm...' butonuna tıkladı!");
 
-            const maxX = cardRect.width - btnHayir.offsetWidth - 20;
-            const maxY = cardRect.height - btnHayir.offsetHeight - 20;
+            titleEl.textContent = "Emin Misisin? 🥹💖";
+            subtitleEl.textContent = "Gerçekten fikrini değiştirip bana bir şans vermek istiyor musun?";
 
-            let randomX, randomY;
-            let overlap = false;
-            let attempts = 0;
-
-            do {
-                randomX = Math.max(10, Math.floor(Math.random() * maxX));
-                randomY = Math.max(10, Math.floor(Math.random() * maxY));
-
-                const btnHayirLeft = cardRect.left + randomX;
-                const btnHayirTop = cardRect.top + randomY;
-                const btnHayirRight = btnHayirLeft + btnHayir.offsetWidth;
-                const btnHayirBottom = btnHayirTop + btnHayir.offsetHeight;
-
-                const margin = 15;
-                overlap = !(
-                    btnHayirRight < evetRect.left - margin ||
-                    btnHayirLeft > evetRect.right + margin ||
-                    btnHayirBottom < evetRect.top - margin ||
-                    btnHayirTop > evetRect.bottom + margin
-                );
-
-                attempts++;
-            } while (overlap && attempts < 20);
-
-            btnHayir.style.left = `${randomX}px`;
-            btnHayir.style.top = `${randomY}px`;
-
-            logAction(`"Hayır" butonu rastgele konuma kaçırıldı (${randomX}px, ${randomY}px).`);
+            buttonGroup.innerHTML = `
+                <div class="flex flex-row items-center justify-center gap-4 w-full animate-fade-in">
+                    <button onclick="handleEvetClick()" class="btn-evet text-white font-bold py-3 px-8 rounded-full text-lg cursor-pointer transform hover:scale-105">
+                        Evet, Eminim! 🥰
+                    </button>
+                    <button onclick="showKapatildiState()" class="btn-hayir font-semibold py-3 px-6 rounded-full text-sm cursor-pointer whitespace-nowrap hover:bg-gray-100">
+                        Hayır, Vazgeçtim 🙈
+                    </button>
+                </div>
+            `;
         }
 
         // EVET BUTTON CLICK (SUCCESS STATE)
         function handleEvetClick() {
-            const partnerName = document.getElementById('partner-name').value.trim() || "Ali";
-            const myName = document.getElementById('my-name').value.trim() || "Melike";
+            const partnerName = "Ali";
+            const myName = "Melike";
 
             logAction(`🎉 HARİKA HABER! Ziyaretçi "EVET" butonuna bastı! Teklif Kabul Edildi!`);
             
-            const successMsg = `🎉 *HARİKA HABER! TEKLİF KABUL EDİLDİ!* ❤️\n\n👩‍❤️‍👨 *Çift:* ${partnerName} & ${myName}\n📊 *Kabul Edilmeden Önceki Hayır Sayısı:* ${hayirClicksCount}\n✨ *Tebrikler!*`;
+            const successMsg = `🎉 TEKLİF KABUL EDİLDİ! ❤️\n👩‍❤️‍👨 Çift: ${partnerName} & ${myName}\n📊 Önceki hayır tıklaması: ${hayirClicksCount}`;
             sendTelegramNotification(successMsg);
 
             document.getElementById('names-input-container').style.display = 'none';
@@ -395,14 +381,15 @@
             `;
             reloadTenorScript();
 
-            document.getElementById('button-group').innerHTML = `
+            buttonGroup.innerHTML = `
                 <div class="flex flex-col items-center justify-center w-full gap-3">
                     <div class="bg-gradient-to-r from-pink-500 via-red-500 to-pink-500 text-white font-bold px-6 py-4 rounded-2xl w-full text-center shadow-xl flex items-center justify-center gap-2 animate-pulse">
-                        <i class="fa-solid fa-heart text-white text-xl"></i> Sonsuza Kadar Beraberiz! <i class="fa-solid fa-heart text-white text-xl"></i>
+                        <i class="fa-solid fa-heart text-white text-xl"></i> Birlikte Güzel Bir Hikâyeye! 💞 <i class="fa-solid fa-heart text-white text-xl"></i>
                     </div>
+                    <!-- Şık İsim Kartı -->
                     <div class="w-full bg-white/80 border border-pink-300 rounded-2xl p-4 shadow-md transform hover:scale-105 transition-all">
-                        <p class="text-xs font-semibold uppercase tracking-widest text-pink-500 mb-1">Aşkımızın Yeni Sayfası</p>
-                        <div class="cursive-font text-3xl sm:text-4xl text-pink-600 font-bold flex items-center justify-center gap-3">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-pink-500 mb-1">Hikâyemizin İlk Sayfası</p>
+                        <div class="cursive-font text-4xl sm:text-5xl text-pink-700 font-normal flex items-center justify-center gap-3" style="font-family:'Great Vibes',cursive;text-shadow:0 1px 0 #fff, 0 3px 12px rgba(190,24,93,.18);">
                             <span>${partnerName}</span>
                             <i class="fa-solid fa-heart-pulse text-red-500 text-2xl animate-bounce"></i>
                             <span>${myName}</span>
@@ -438,77 +425,7 @@
         // TELEGRAM BİLDİRİM GÖNDERME FONKSİYONU
         function sendTelegramNotification(messageText) {
             if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return;
-
             const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
-            const payload = {
-                chat_id: TELEGRAM_CHAT_ID,
-                text: messageText,
-                parse_mode: 'Markdown'
-            };
-
             fetch(url, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(payload)
-            }).catch(error => {
-                console.error("Telegram bildirim gönderilemedi:", error);
-            });
-        }
-
-        // FLOATING HEARTS ANIMATION GENERATOR
-        function createFloatingHearts() {
-            setInterval(createHeart, 400);
-        }
-
-        function createHeart() {
-            const container = document.getElementById('hearts-container');
-            if (!container) return;
-
-            const heart = document.createElement('div');
-            heart.className = 'heart-particle text-pink-400';
-            
-            const icons = ['fa-heart', 'fa-solid fa-heart', 'fa-solid fa-seedling', 'fa-solid fa-sparkles'];
-            const randomIcon = icons[Math.floor(Math.random() * icons.length)];
-            
-            heart.innerHTML = `<i class="${randomIcon}"></i>`;
-            
-            const startX = Math.random() * window.innerWidth;
-            const size = Math.floor(Math.random() * 16) + 10;
-            const duration = Math.random() * 3 + 4;
-            
-            heart.style.left = `${startX}px`;
-            heart.style.fontSize = `${size}px`;
-            heart.style.animationDuration = `${duration}s`;
-            
-            container.appendChild(heart);
-            
-            setTimeout(() => {
-                heart.remove();
-            }, duration * 1000);
-        }
-
-        // ADMIN PANEL TOGGLE
-        function toggleAdminPanel(forceState) {
-            const modal = document.getElementById('admin-log-modal');
-            if (!modal) return;
-            
-            if (forceState !== undefined) {
-                if (forceState) modal.classList.remove('hidden');
-                else modal.classList.add('hidden');
-            } else {
-                modal.classList.toggle('hidden');
-            }
-        }
-
-        function clearLogs() {
-            logs = [];
-            hayirClicksCount = 0;
-            const logContent = document.getElementById('log-content');
-            if (logContent) logContent.innerHTML = '';
-            document.getElementById('log-count').textContent = `Toplam "Hayır" Tıklaması: 0`;
-        }
-    </script>
-</body>
-</html>
+                header
