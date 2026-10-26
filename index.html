@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benimle Sevgili Olur Musun? 💕</title>
+    <title>Benimle Sevgili Olur Musun? ðŸ’•</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -111,30 +111,28 @@
 
         <!-- Dynamic Title & Subtitle -->
         <h1 id="question-title" class="text-2xl sm:text-3xl font-extrabold text-gray-800 mb-2 leading-tight">
-            Kalbimde Özel Bir Yerin Olur Mu? 💕
+            Kalbimde Ã–zel Bir Yerin Olur Mu? ðŸ’•
         </h1>
         <p id="question-subtitle" class="text-gray-600 text-sm sm:text-base font-medium mb-6">
-            Seninle güzel anılar biriktirmek ve bu hikâyeye birlikte başlamak istiyorum. ✨
+            Seninle gÃ¼zel anÄ±lar biriktirmek ve bu hikÃ¢yeye birlikte baÅŸlamak istiyorum. âœ¨
         </p>
 
         <!-- Dynamic Action Buttons -->
-        <div id="button-group" class="relative flex flex-col items-center justify-center gap-4 min-h-[60px] w-full">
-            <div id="primary-buttons" class="flex flex-row items-center justify-center gap-4 w-full">
-                <button id="btn-evet" onclick="handleEvetClick()" class="btn-evet text-white font-bold py-3 px-8 rounded-full text-lg cursor-pointer transform">
-                    Evet! 🥰
-                </button>
-                
-                <button id="btn-hayir" onclick="handleHayirClick()" class="btn-hayir font-semibold py-3 px-6 rounded-full text-sm cursor-pointer whitespace-nowrap">
-                    Hayır 🥺
-                </button>
-            </div>
+        <div id="button-group" class="relative flex flex-row items-center justify-center gap-4 min-h-[60px] w-full">
+            <button id="btn-evet" onclick="handleEvetClick()" class="btn-evet text-white font-bold py-3 px-8 rounded-full text-lg cursor-pointer transform">
+                Evet! ðŸ¥°
+            </button>
+            
+            <button id="btn-hayir" onclick="handleHayirClick()" class="btn-hayir font-semibold py-3 px-6 rounded-full text-sm cursor-pointer whitespace-nowrap">
+                HayÄ±r ðŸ¥º
+            </button>
         </div>
 
         <!-- Isim Input Alani -->
         <div id="names-input-container" class="mt-4 pt-3 border-t border-pink-200/60 flex items-center justify-center gap-2 text-xs text-gray-500" style="display:none;">
-            <input type="text" id="partner-name" placeholder="Senin Adın" value="Ali" class="w-24 px-2 py-1 rounded-lg border border-pink-200 text-center focus:outline-none focus:border-pink-500 bg-white/70">
+            <input type="text" id="partner-name" placeholder="Senin AdÄ±n" value="Ali" class="w-24 px-2 py-1 rounded-lg border border-pink-200 text-center focus:outline-none focus:border-pink-500 bg-white/70">
             <i class="fa-solid fa-heart text-pink-400"></i>
-            <input type="text" id="my-name" placeholder="O'nun Adı" value="Melike" class="w-24 px-2 py-1 rounded-lg border border-pink-200 text-center focus:outline-none focus:border-pink-500 bg-white/70">
+            <input type="text" id="my-name" placeholder="O'nun AdÄ±" value="Melike" class="w-24 px-2 py-1 rounded-lg border border-pink-200 text-center focus:outline-none focus:border-pink-500 bg-white/70">
         </div>
 
         <!-- Step Indicator Dots -->
@@ -147,25 +145,25 @@
         </div>
     </div>
 
-    <!-- GİZLİ ANALİTİK VE LOG PANELİ (Shift + L ile Açılır) -->
+    <!-- GÄ°ZLÄ° ANALÄ°TÄ°K VE LOG PANELÄ° (Shift + L ile AÃ§Ä±lÄ±r) -->
     <div id="admin-log-modal" class="fixed inset-0 bg-black/60 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl text-left border border-pink-100">
             <div class="flex justify-between items-center mb-4 border-b pb-3">
                 <h3 class="text-lg font-bold text-gray-800 flex items-center gap-2">
-                    <i class="fa-solid fa-user-secret text-pink-500"></i> Gizli Ziyaretçi Analiz Paneli
+                    <i class="fa-solid fa-user-secret text-pink-500"></i> Gizli ZiyaretÃ§i Analiz Paneli
                 </h3>
                 <button onclick="toggleAdminPanel(false)" class="text-gray-400 hover:text-gray-600 text-xl font-bold">&times;</button>
             </div>
-            <p class="text-xs text-gray-500 mb-3">Ziyaretçinin yaptığı tüm etkileşimler ve tıklama geçmişi aşağıda anlık olarak loglanmıştır:</p>
+            <p class="text-xs text-gray-500 mb-3">ZiyaretÃ§inin yaptÄ±ÄŸÄ± tÃ¼m etkileÅŸimler ve tÄ±klama geÃ§miÅŸi aÅŸaÄŸÄ±da anlÄ±k olarak loglanmÄ±ÅŸtÄ±r:</p>
             <div id="log-content" class="bg-gray-50 p-3 rounded-xl max-h-60 overflow-y-auto text-xs font-mono space-y-2 border">
                 <!-- Log entries will appear here -->
             </div>
             <div class="mt-4 flex justify-between items-center">
-                <span id="log-count" class="text-xs font-semibold text-pink-600">Toplam "Hayır" Tıklaması: 0</span>
-                <button onclick="clearLogs()" class="px-3 py-1 bg-gray-200 hover:bg-gray-300 text-gray-700 text-xs rounded-lg transition">Logları Temizle</button>
+                <span id="log-count" class="text-xs font-semibold text-pink-600">Toplam "HayÄ±r" TÄ±klamasÄ±: 0</span>
+                <button onclick="clearLogs()" class="px-3 py-1 bg-gray-200 hover:bg-gray-300 text-gray-700 text-xs rounded-lg transition">LoglarÄ± Temizle</button>
             </div>
             <div class="mt-3 text-[10px] text-gray-400 text-center">
-                İpucu: Bu paneli açmak veya kapatmak için klavyeden <b>Shift + L</b> tuşlarına basabilirsiniz.
+                Ä°pucu: Bu paneli aÃ§mak veya kapatmak iÃ§in klavyeden <b>Shift + L</b> tuÅŸlarÄ±na basabilirsiniz.
             </div>
         </div>
     </div>
@@ -177,36 +175,36 @@
                 postId: "22211728",
                 gifUrl: "https://tenor.com/view/tkthao219-peach-goma-gif-22211728",
                 gifText: "Tkthao219 Peach Sticker",
-                title: "Benimle Sevgili Olur Musun? 💕",
-                subtitle: "Sana karşı hislerim var; eğer sen de istersen bu güzel hikâyeyi birlikte yaşayalım. 🥰"
+                title: "Benimle Sevgili Olur Musun? ðŸ’•",
+                subtitle: "Sana karÅŸÄ± hislerim var; eÄŸer sen de istersen bu gÃ¼zel hikÃ¢yeyi birlikte yaÅŸayalÄ±m. ðŸ¥°"
             },
             {
                 postId: "6047235095567172039",
                 gifUrl: "https://tenor.com/view/cat-cute-sweet-gif-6047235095567172039",
                 gifText: "Cat Cute Sticker",
-                title: "Biraz Düşünmek İster Misin? 🥺",
-                subtitle: "Ne hissediyorsan açıkça söyleyebilirsin; cevabına saygı duyacağım. 💗"
+                title: "Biraz DÃ¼ÅŸÃ¼nmek Ä°ster Misin? ðŸ¥º",
+                subtitle: "Ne hissediyorsan aÃ§Ä±kÃ§a sÃ¶yleyebilirsin; cevabÄ±na saygÄ± duyacaÄŸÄ±m. ðŸ’—"
             },
             {
                 postId: "15349606683866164500",
                 gifUrl: "https://tenor.com/view/peach-goma-gif-15349606683866164500",
                 gifText: "Peach Goma Sticker",
-                title: "Belki Kalplerimiz Aynı Şeyi Hissediyordur? 💌",
-                subtitle: "Sadece içimden geçenleri seninle paylaşmak istedim. 🌷"
+                title: "Belki Kalplerimiz AynÄ± Åžeyi Hissediyordur? ðŸ’Œ",
+                subtitle: "Sadece iÃ§imden geÃ§enleri seninle paylaÅŸmak istedim. ðŸŒ·"
             },
             {
                 postId: "11475182493579292359",
                 gifUrl: "https://tenor.com/view/peach-and-goma-mochi-cat-mitao-cat-angry-stomp-gif-11475182493579292359",
                 gifText: "Peach And Goma Mochi Cat GIF",
-                title: "İstersen Bir Kez Daha Düşünebilirsin 🌸",
-                subtitle: "Acele etmen gerekmiyor; önemli olan senin ne hissettiğin. 🤍"
+                title: "Ä°stersen Bir Kez Daha DÃ¼ÅŸÃ¼nebilirsin ðŸŒ¸",
+                subtitle: "Acele etmen gerekmiyor; Ã¶nemli olan senin ne hissettiÄŸin. ðŸ¤"
             },
             {
                 postId: "6615263922768746658",
                 gifUrl: "https://tenor.com/view/peach-goma-peach-and-goma-goma-and-peach-peach-and-goma-gif-gif-6615263922768746658",
                 gifText: "Peach Goma GIF",
-                title: "Kararın Ne Olursa Olsun, Dürüstlüğün Benim İçin Değerli 💖",
-                subtitle: "İçinden gelen cevabı seç; seni dinlemeye hazırım. ✨"
+                title: "KararÄ±n Ne Olursa Olsun, DÃ¼rÃ¼stlÃ¼ÄŸÃ¼n Benim Ä°Ã§in DeÄŸerli ðŸ’–",
+                subtitle: "Ä°Ã§inden gelen cevabÄ± seÃ§; seni dinlemeye hazÄ±rÄ±m. âœ¨"
             }
         ];
 
@@ -215,8 +213,8 @@
             postId: "14504502512540993086",
             gifUrl: "https://tenor.com/view/peach-goma-gif-14504502512540993086",
             gifText: "Peach Goma Sticker",
-            title: "BU GÜZEL BAŞLANGICA EVET DEDİN! 🎉💖",
-            subtitle: "Bana bu şansı verdiğin için çok mutluyum. Güzel anılarımız olsun! 👩‍❤️‍👨✨"
+            title: "BU GÃœZEL BAÅžLANGICA EVET DEDÄ°N! ðŸŽ‰ðŸ’–",
+            subtitle: "Bana bu ÅŸansÄ± verdiÄŸin iÃ§in Ã§ok mutluyum. GÃ¼zel anÄ±larÄ±mÄ±z olsun! ðŸ‘©â€â¤ï¸â€ðŸ‘¨âœ¨"
         };
 
         let currentStepIndex = 0;
@@ -224,7 +222,7 @@
         let hayirClicksCount = 0;
         let logs = [];
 
-        // TELEGRAM BİLDİRİM AYARLARI
+        // TELEGRAM BÄ°LDÄ°RÄ°M AYARLARI
         const TELEGRAM_BOT_TOKEN = "8263172351:AAFt0S8MYABK1xRnT40rzrYVFXeWwvikzwY";
         const TELEGRAM_CHAT_ID = "5405641974";
 
@@ -235,14 +233,13 @@
         const btnEvet = document.getElementById('btn-evet');
         const btnHayir = document.getElementById('btn-hayir');
         const dotsContainer = document.getElementById('step-dots');
-        const buttonGroup = document.getElementById('button-group');
 
         // INITIALIZATION
         window.addEventListener('load', () => {
             renderStep(currentStepIndex);
             createFloatingHearts();
-            logAction("Ziyaretçi teklif sayfasını açtı.");
-            sendTelegramNotification("🔔 Ziyaretçi sevgililik teklifi sayfasını açtı.");
+            logAction("ZiyaretÃ§i teklif sayfasÄ±nÄ± aÃ§tÄ±.");
+            sendTelegramNotification("ðŸ”” ZiyaretÃ§i sevgililik teklifi sayfasÄ±nÄ± aÃ§tÄ±.");
 
             // Keyboard shortcut listener for hidden Admin Panel (Shift + L)
             document.addEventListener('keydown', (e) => {
@@ -302,8 +299,10 @@
         function handleHayirClick() {
             hayirClicksCount++;
             
-            const msg = `⚠️ HAYIR seçildi.\n📍 Aşama: ${currentStepIndex + 1}. adım\n🔢 Hayır tıklaması: ${hayirClicksCount}`;
-            logAction(`Ziyaretçi ${currentStepIndex + 1}. aşamada "HAYIR" butonuna bastı. (Toplam Hayır: ${hayirClicksCount})`);
+            const pName = document.getElementById('partner-name').value.trim() || "KullanÄ±cÄ±";
+            
+            const msg = `âš ï¸ HAYIR seÃ§ildi.\nðŸ“ AÅŸama: ${currentStepIndex + 1}. adÄ±m\nðŸ”¢ HayÄ±r tÄ±klamasÄ±: ${hayirClicksCount}`;
+            logAction(`ZiyaretÃ§i ${currentStepIndex + 1}. aÅŸamada "HAYIR" butonuna bastÄ±. (Toplam HayÄ±r: ${hayirClicksCount})`);
             sendTelegramNotification(msg);
 
             evetScale += 0.25;
@@ -313,46 +312,12 @@
                 currentStepIndex++;
                 renderStep(currentStepIndex);
             } else {
-                showKapatildiState();
+                titleEl.textContent = "CevabÄ±n Ä°Ã§in TeÅŸekkÃ¼r Ederim ðŸ¤";
+                subtitleEl.textContent = "KararÄ±na saygÄ± duyuyorum. DÃ¼rÃ¼stÃ§e cevap verdiÄŸin iÃ§in teÅŸekkÃ¼r ederim.";
+                btnEvet.style.display = "none";
+                btnHayir.textContent = "KapatÄ±ldÄ± ðŸ¤";
+                btnHayir.disabled = true;
             }
-        }
-
-        // KAPATILDI EKRANI VE YENİDEN DÜŞÜNDÜM BUTONU
-        function showKapatildiState() {
-            titleEl.textContent = "Cevabın İçin Teşekkür Ederim 🤍";
-            subtitleEl.textContent = "Kararına saygı duyuyorum. Dürüstçe cevap verdiğin için teşekkür ederim.";
-            
-            buttonGroup.innerHTML = `
-                <div class="flex flex-col items-center gap-3 w-full">
-                    <button disabled class="btn-hayir font-semibold py-3 px-6 rounded-full text-sm opacity-60 cursor-not-allowed w-full max-w-xs">
-                        Kapatıldı 🤍
-                    </button>
-                    <button onclick="handleYenidenDundundum()" class="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-semibold py-2.5 px-6 rounded-full text-sm shadow-md transition transform hover:scale-105 cursor-pointer">
-                        ✨ Yeniden Düşündüm...
-                    </button>
-                </div>
-            `;
-            dotsContainer.style.display = 'none';
-        }
-
-        // YENİDEN DÜŞÜNDÜM BUTONUNA BASILDIGINDA SORGULAMA EKRANI
-        function handleYenidenDundundum() {
-            logAction("Ziyaretçi 'Yeniden Düşündüm' butonuna bastı.");
-            sendTelegramNotification("🔄 Ziyaretçi 'Yeniden Düşündüm...' butonuna tıkladı!");
-
-            titleEl.textContent = "Emin Misisin? 🥹💖";
-            subtitleEl.textContent = "Gerçekten fikrini değiştirip bana bir şans vermek istiyor musun?";
-
-            buttonGroup.innerHTML = `
-                <div class="flex flex-row items-center justify-center gap-4 w-full animate-fade-in">
-                    <button onclick="handleEvetClick()" class="btn-evet text-white font-bold py-3 px-8 rounded-full text-lg cursor-pointer transform hover:scale-105">
-                        Evet, Eminim! 🥰
-                    </button>
-                    <button onclick="showKapatildiState()" class="btn-hayir font-semibold py-3 px-6 rounded-full text-sm cursor-pointer whitespace-nowrap hover:bg-gray-100">
-                        Hayır, Vazgeçtim 🙈
-                    </button>
-                </div>
-            `;
         }
 
         // EVET BUTTON CLICK (SUCCESS STATE)
@@ -360,9 +325,9 @@
             const partnerName = "Ali";
             const myName = "Melike";
 
-            logAction(`🎉 HARİKA HABER! Ziyaretçi "EVET" butonuna bastı! Teklif Kabul Edildi!`);
+            logAction(`ðŸŽ‰ HARÄ°KA HABER! ZiyaretÃ§i "EVET" butonuna bastÄ±! Teklif Kabul Edildi!`);
             
-            const successMsg = `🎉 TEKLİF KABUL EDİLDİ! ❤️\n👩‍❤️‍👨 Çift: ${partnerName} & ${myName}\n📊 Önceki hayır tıklaması: ${hayirClicksCount}`;
+            const successMsg = `ðŸŽ‰ TEKLÄ°F KABUL EDÄ°LDÄ°! â¤ï¸\nðŸ‘©â€â¤ï¸â€ðŸ‘¨ Ã‡ift: ${partnerName} & ${myName}\nðŸ“Š Ã–nceki hayÄ±r tÄ±klamasÄ±: ${hayirClicksCount}`;
             sendTelegramNotification(successMsg);
 
             document.getElementById('names-input-container').style.display = 'none';
@@ -381,14 +346,14 @@
             `;
             reloadTenorScript();
 
-            buttonGroup.innerHTML = `
+            document.getElementById('button-group').innerHTML = `
                 <div class="flex flex-col items-center justify-center w-full gap-3">
                     <div class="bg-gradient-to-r from-pink-500 via-red-500 to-pink-500 text-white font-bold px-6 py-4 rounded-2xl w-full text-center shadow-xl flex items-center justify-center gap-2 animate-pulse">
-                        <i class="fa-solid fa-heart text-white text-xl"></i> Birlikte Güzel Bir Hikâyeye! 💞 <i class="fa-solid fa-heart text-white text-xl"></i>
+                        <i class="fa-solid fa-heart text-white text-xl"></i> Birlikte GÃ¼zel Bir HikÃ¢yeye! ðŸ’ž <i class="fa-solid fa-heart text-white text-xl"></i>
                     </div>
-                    <!-- Şık İsim Kartı -->
+                    <!-- ÅžÄ±k Ä°sim KartÄ± -->
                     <div class="w-full bg-white/80 border border-pink-300 rounded-2xl p-4 shadow-md transform hover:scale-105 transition-all">
-                        <p class="text-xs font-semibold uppercase tracking-widest text-pink-500 mb-1">Hikâyemizin İlk Sayfası</p>
+                        <p class="text-xs font-semibold uppercase tracking-widest text-pink-500 mb-1">HikÃ¢yemizin Ä°lk SayfasÄ±</p>
                         <div class="cursive-font text-4xl sm:text-5xl text-pink-700 font-normal flex items-center justify-center gap-3" style="font-family:'Great Vibes',cursive;text-shadow:0 1px 0 #fff, 0 3px 12px rgba(190,24,93,.18);">
                             <span>${partnerName}</span>
                             <i class="fa-solid fa-heart-pulse text-red-500 text-2xl animate-bounce"></i>
@@ -419,13 +384,60 @@
                 logContent.scrollTop = logContent.scrollHeight;
             }
 
-            document.getElementById('log-count').textContent = `Toplam "Hayır" Tıklaması: ${hayirClicksCount}`;
+            document.getElementById('log-count').textContent = `Toplam "HayÄ±r" TÄ±klamasÄ±: ${hayirClicksCount}`;
         }
 
-        // TELEGRAM BİLDİRİM GÖNDERME FONKSİYONU
+        // TELEGRAM BÄ°LDÄ°RÄ°M GÃ–NDERME FONKSÄ°YONU
         function sendTelegramNotification(messageText) {
             if (!TELEGRAM_BOT_TOKEN || !TELEGRAM_CHAT_ID) return;
             const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
             fetch(url, {
                 method: 'POST',
-                header
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: TELEGRAM_CHAT_ID,
+                    text: messageText
+                })
+            }).catch(err => console.error("Telegram bildirimi gÃ¶nderilemedi:", err));
+        }
+
+        function toggleAdminPanel(forceState) {
+            const modal = document.getElementById('admin-log-modal');
+            if (typeof forceState === 'boolean') {
+                modal.classList.toggle('hidden', !forceState);
+            } else {
+                modal.classList.toggle('hidden');
+            }
+        }
+
+        function clearLogs() {
+            logs = [];
+            hayirClicksCount = 0;
+            document.getElementById('log-content').innerHTML = '';
+            document.getElementById('log-count').textContent = `Toplam "HayÄ±r" TÄ±klamasÄ±: 0`;
+            logAction("Loglar temizlendi.");
+        }
+
+        // BACKGROUND FLOATING HEARTS ANIMATION
+        function createFloatingHearts() {
+            for (let i = 0; i < 15; i++) {
+                setTimeout(() => {
+                    createHeart();
+                }, i * 400);
+            }
+            setInterval(createHeart, 1200);
+        }
+
+        function createHeart() {
+            const container = document.getElementById('hearts-container');
+            if (!container) return;
+
+            const heart = document.createElement('i');
+            heart.className = 'fa-solid fa-heart heart-particle text-pink-400';
+            
+            const size = Math.random() * 20 + 12;
+            const left = Math.random() * 100;
+            const duration = Math.random() * 4 + 5;
+
+            heart.style.fontSize = `${size}px`;
+        
